@@ -24,8 +24,6 @@ plugins:
            Database:
             driver: 'mysql'
             database: 'fundraiser'
-            host: "mysql://$OPENSHIFT_MYSQL_DB_HOST"
-            port: $OPENSHIFT_MYSQL_DB_PORT
             username: 'adminKcmiYjK'
             password: 'dP2tJsSDvSrz'
             connection_check_threshold: 10
