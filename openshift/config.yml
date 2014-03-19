@@ -23,7 +23,7 @@ template: "simple"
 plugins:
         Database:
             driver: SQLite
-            database: '../../funding.sqlite'
+            database: '../funding.sqlite'
 # template: "template_toolkit"
 # engines:
 #   template_toolkit:
