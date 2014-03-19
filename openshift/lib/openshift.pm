@@ -8,7 +8,7 @@ get '/' => sub {
 };
 get '/donation/view/list' => sub {
     
-	my @row = $dhb->quick_select('donation', {  });
+	my @row = $dbh->quick_select('donation', {  });
         template 'display_donor_list', { widget => \@row };
 };
 get '/donation/view/:id' => sub {
