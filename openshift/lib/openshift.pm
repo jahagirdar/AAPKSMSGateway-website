@@ -8,16 +8,20 @@ get '/' => sub {
 };
 get '/donation/view/list' => sub {
     
-	my @row = $dhb->quick_select('donor', {  });
+	my @row = $dhb->quick_select('donation', {  });
         template 'display_donor_list', { widget => \@row };
 };
 get '/donation/view/:id' => sub {
-	my $row = $dbh->quick_select('donor', { id => 42 });
+	my $row = $dbh->quick_select('donation', { id => 42 });
 	template 'display_donor', { widget => $row };
 };
 post '/donation/add' =>sub{
 
-    $dbh->quick_insert('donor', { name => params->{name} });
+    $dbh->quick_insert('donation', { Name => params->{name},
+	   Donor_Phone=>params->{dn_phone},
+  Volunteer_Phone=>params->{vol_phone},
+Donation_Time=>params->{don_time},
+Receipt=>params->{rec_number} });
 
 };
 get '/donation' => sub {
