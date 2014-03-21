@@ -45,6 +45,8 @@
                 <li>Template engine: <code><% settings.template %></code></li>
                 <li>Logger: <code><% settings.logger %></code></li>
                 <li>Environment: <code><% settings.environment %></code></li>
+		<li>SQL_HOST:$ENV{OPENSHIFT_MYSQL_DB_HOST}</li>
+		<li>SQL_port:$ENV{OPENSHIFT_MYSQL_DB_PORT}</li>
             </ul>
 
           </li>
