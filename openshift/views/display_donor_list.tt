@@ -1,8 +1,13 @@
 <div id="page">
 <div id="content">
-<div id="header"></div>
-<%FOREACH widget IN widgets%>
-[%table.donor_phone%]
+<div id="header">Sponsor Your Candidate</div>
+<table><thead>
+<tr><th>Donor</th> <th> amount</th> <th>time</th></tr></thead>
+<tbody>
+<%FOREACH tbl IN table%>
+<tr>
+<td><%tbl.name%> </td><td><%tbl.amount%></td><td><%tbl.time%></td></tr>
 <%END%>
+</tbody>
 </div>
 </div>

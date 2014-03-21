@@ -12,7 +12,7 @@ get '/donation/create/volunteer' => sub{
             'CREATE TABLE volunteer ( phone_number TEXT PRIMARY KEY, name         TEXT, id           TEXT, amount       TEXT, role         TEXT, creator      TEXT );'
         );
         $sth->execute();
-	  my $sth = database->prepare(
+	  $sth = database->prepare(
             'CREATE TABLE donation ( id TEXT PRIMARY KEY, donor_phone TEXT, name TEXT, volunteer_phone TEXT, amount TEXT, receipt TEXT, time TEXT );'
         );
         $sth->execute();
@@ -21,6 +21,7 @@ get '/donation/create/volunteer' => sub{
 get '/donation/view/list' => sub {
 
 	my @row = $dbh->quick_select('donation', {  });
+	print $#row;
 	template 'display_donor_list', { table => \@row };
 };
 get '/donation/view/:id' => sub {
