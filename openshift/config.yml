@@ -21,19 +21,23 @@ charset: "UTF-8"
 template: "simple"
 
 plugins:
-           Database:
-            driver: 'mysql'
-            database: 'fundraiser'
-            username: 'adminKcmiYjK'
-            password: 'dP2tJsSDvSrz'
-            host: $ENV{OPENSHIFT_MYSQL_DB_HOST}
-            port: $ENV{OPENSHIFT_MYSQL_DB_PORT}
-            connection_check_threshold: 10
-            dbi_params:
-                RaiseError: 1
-                AutoCommit: 1
-            on_connect_do: ["SET NAMES 'utf8'", "SET CHARACTER SET 'utf8'" ]
-            log_queries: 1
+        Database:
+                driver: SQLite
+                database: 'fundraiser'
+#plugins:
+#           Database:
+#            driver: 'mysql'
+#            database: 'fundraiser'
+#            username: 'adminKcmiYjK'
+#            password: 'dP2tJsSDvSrz'
+#            host: $ENV{OPENSHIFT_MYSQL_DB_HOST}
+#            port: $ENV{OPENSHIFT_MYSQL_DB_PORT}
+#            connection_check_threshold: 10
+#            dbi_params:
+#                RaiseError: 1
+#                AutoCommit: 1
+#            on_connect_do: ["SET NAMES 'utf8'", "SET CHARACTER SET 'utf8'" ]
+#            log_queries: 1
 # template: "template_toolkit"
 # engines:
 #   template_toolkit:

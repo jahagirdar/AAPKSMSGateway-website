@@ -2,7 +2,8 @@ package openshift;
 use Dancer ':syntax';
 use Dancer::Plugin::Database;
 our $VERSION = '0.1';
-my $dbh = database({ driver => 'mysql', database=>'fundraiser',host=>$ENV{OPENSHIFT_MYSQL_DB_HOST},port=>$ENV{OPENSHIFT_MYSQL_DB_PORT},username=>'adminKcmiYjK',password=>'dP2tJsSDvSrz',connection_check_threshold=>10});
+#my $dbh = database({ driver => 'mysql', database=>'fundraiser',host=>$ENV{OPENSHIFT_MYSQL_DB_HOST},port=>$ENV{OPENSHIFT_MYSQL_DB_PORT},username=>'adminKcmiYjK',password=>'dP2tJsSDvSrz',connection_check_threshold=>10});
+my $dbh = database({ database=>"$ENV{'OPENSHIFT_DATA_DIR'}/fundraiser"});
 get '/' => sub {
     template 'index';
 };
