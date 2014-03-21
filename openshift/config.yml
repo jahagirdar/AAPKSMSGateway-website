@@ -26,6 +26,8 @@ plugins:
             database: 'fundraiser'
             username: 'adminKcmiYjK'
             password: 'dP2tJsSDvSrz'
+            host: $ENV{OPENSHIFT_MYSQL_DB_HOST}
+            port: $ENV{OPENSHIFT_MYSQL_DB_PORT}
             connection_check_threshold: 10
             dbi_params:
                 RaiseError: 1
