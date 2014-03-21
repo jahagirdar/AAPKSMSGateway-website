@@ -1,5 +1,6 @@
 Test::Base
 YAML
 Dancer
+Dancer::Plugin::Database
 Plack::Handler::Apache2
 
