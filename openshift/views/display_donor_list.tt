@@ -4,9 +4,12 @@
 <table><thead>
 <tr><th>Donor</th> <th> amount</th> <th>time</th></tr></thead>
 <tbody>
+<%USE Dumper;Dumper.dump(table)%>
+<%table%>
 <%FOREACH tbl IN table%>
 <tr>
-<td><%tbl.name%> </td><td><%tbl.amount%></td><td><%tbl.time%></td></tr>
+<td><%tbl.name%> </td><td><%tbl.amount%></td><td><%tbl.time%></td>
+</tr>
 <%END%>
 </tbody>
 </div>

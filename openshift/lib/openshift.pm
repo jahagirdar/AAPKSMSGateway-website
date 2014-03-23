@@ -34,6 +34,7 @@ get '/donation/add' =>sub{
 			Donor_Phone=>params->{dn_phone},
 			Volunteer_Phone=>params->{vol_phone},
 			Donation_Time=>params->{don_time},
+			amount=>params->{amount},
 			Receipt=>params->{rec_number} });
 
 };
