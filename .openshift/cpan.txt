@@ -3,4 +3,5 @@ YAML
 Dancer
 Dancer::Plugin::Database
 Plack::Handler::Apache2
+Template::Toolkit
 
