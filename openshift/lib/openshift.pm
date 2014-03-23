@@ -50,7 +50,7 @@ set serializer => 'JSON';
  
 get '/donation/json/lastUpload' => sub{
 	my $sth=$dbh->prepare('SELECT max(phone_id) FROM donation;');
-	$row=$sth->execute();
+	$sth->execute();
 my @row = $sth->fetchrow_array;
 	debug(@row);
 	my $r->{"id"}=$row[0];
