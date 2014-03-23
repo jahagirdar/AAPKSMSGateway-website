@@ -35,11 +35,32 @@ get '/donation/add' =>sub{
 			Volunteer_Phone=>params->{vol_phone},
 			Donation_Time=>params->{don_time},
 			amount=>params->{amount},
-			Receipt=>params->{rec_number} });
+			Receipt=>params->{rec_number},
+			phone_id=>params->{id}	});
 
 };
 get '/donation' => sub {
     "Hello, World!";
 };
 
+###########################
+# AJAX Interface          #
+###########################
+set serializer => 'JSON';
+ 
+get '/donation/json/lastUpload' sub{
+	$dbh->prepare('SELECT max(phone_id) FROM donation)');
+	my $row=$dbh->execute();
+	return $row;
+};
+post '/donation/json/add' sub {
+	return params;
+#$dbh->quick_insert('donation', { Name => params->{name},
+#		Donor_Phone=>params->{dn_phone},
+#		Volunteer_Phone=>params->{vol_phone},
+#		Donation_Time=>params->{don_time},
+#		amount=>params->{amount},
+#		Receipt=>params->{rec_number},
+#		phone_id=>params->{id}	});
+};
 true;
