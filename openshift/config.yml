@@ -25,6 +25,7 @@ template: "template_toolkit"
 #                driver: SQLite
 #                database: 'fundraiser.sqlite'
 #
+logger: 'file'
 plugins:
            Database:
             driver: 'mysql'
