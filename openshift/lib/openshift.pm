@@ -21,7 +21,7 @@ get '/donation/create/volunteer' => sub{
 get '/donation/view/list' => sub {
 
 	my @row = $dbh->quick_select('donation', {  });
-	print $#row;
+	#print $#row;
 	template 'display_donor_list', { table => \@row };
 };
 get '/donation/view/:id' => sub {
