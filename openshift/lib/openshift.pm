@@ -111,12 +111,11 @@ post '/pledge/json/add' => sub {
 
 	debug($data);
 #	return params;
-$dbh->quick_insert('pledge', { Name => $data->{name},
-		Donor_Phone=>$data->{dn_phone},
-		Volunteer_Phone=>$data->{vol_phone},
-		Donation_Time=>$data->{don_time},
+$dbh->quick_insert('pledge', {
+		phone_number=>$data->{phone},
+		constituency=>$data->{candidate},
+		time=>$data->{don_time},
 		amount=>$data->{amount},
-		Receipt=>$data->{receipt},
 		phone_id=>$data->{id}	});
 };
 true;
