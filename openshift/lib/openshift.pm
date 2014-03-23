@@ -56,7 +56,7 @@ get '/donation/json/lastUpload' => sub{
 	return $r;
 };
 post '/donation/json/add' => sub {
-	$data->{"phone"}=param('dn_phone');
+	#$data->{"phone"}=param('dn_phone');
 	my $data=from_json(request->body);
 
 	debug($data);
