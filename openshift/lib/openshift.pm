@@ -61,12 +61,12 @@ post '/donation/json/add' => sub {
 
 	debug($data);
 #	return params;
-#$dbh->quick_insert('donation', { Name => params->{name},
-#		Donor_Phone=>params->{dn_phone},
-#		Volunteer_Phone=>params->{vol_phone},
-#		Donation_Time=>params->{don_time},
-#		amount=>params->{amount},
-#		Receipt=>params->{rec_number},
-#		phone_id=>params->{id}	});
+$dbh->quick_insert('donation', { Name => $data->{name},
+		Donor_Phone=>$data->{dn_phone},
+		Volunteer_Phone=>$data->{vol_phone},
+		Donation_Time=>$data->{don_time},
+		amount=>$data->{amount},
+		Receipt=>$data->{receipt},
+		phone_id=>$data->{id}	});
 };
 true;
