@@ -28,7 +28,7 @@ get '/donation/view/:id' => sub {
 	my $row = $dbh->quick_select('donation', { id => 42 });
 	template 'display_donor', { widget => $row };
 };
-post '/donation/add' =>sub{
+get '/donation/add' =>sub{
 
 	$dbh->quick_insert('donation', { Name => params->{name},
 			Donor_Phone=>params->{dn_phone},
