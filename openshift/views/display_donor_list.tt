@@ -7,8 +7,9 @@
 <%USE Dumper;Dumper.dump(table)%>
 <%table%>
 <%FOREACH tbl IN table%>
+<%USE Dumper;Dumper.dump(tbl)%>
 <tr>
-<td><%tbl.name%> </td><td><%tbl.amount%></td><td><%tbl.time%></td>
+<td><%tbl.Name%> </td><td><%tbl.amount%></td><td><%tbl.Donation_Time%></td>
 </tr>
 <%END%>
 </tbody>
