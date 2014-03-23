@@ -51,6 +51,7 @@ set serializer => 'JSON';
 get '/donation/json/lastUpload' => sub{
 	my $sth=$dbh->prepare('SELECT max(phone_id) FROM donation)');
 	my $row=$sth->execute();
+	debug($row);
 	return $row;
 };
 post '/donation/json/add' => sub {
