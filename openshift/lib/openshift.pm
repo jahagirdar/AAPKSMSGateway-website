@@ -49,12 +49,13 @@ get '/donation' => sub {
 set serializer => 'JSON';
  
 get '/donation/json/lastUpload' => sub{
-	my $sth=$dbh->prepare('SELECT max(phone_id) FROM donation)');
+	my $sth=$dbh->prepare('SELECT max(phone_id) FROM donation;');
 	my $row=$sth->execute();
 	debug($row);
 	return $row;
 };
 post '/donation/json/add' => sub {
+	debug(params);
 	return params;
 #$dbh->quick_insert('donation', { Name => params->{name},
 #		Donor_Phone=>params->{dn_phone},
