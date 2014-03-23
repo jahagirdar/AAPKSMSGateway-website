@@ -113,8 +113,7 @@ post '/pledge/json/add' => sub {
 #	return params;
 $dbh->quick_insert('pledge', {
 		phone_number=>$data->{phone},
-		constituency=>$data->{candidate},
-		time=>$data->{don_time},
+		Constituency=>$data->{candidate},
 		amount=>$data->{amount},
 		phone_id=>$data->{id}	});
 };
