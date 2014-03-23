@@ -56,9 +56,10 @@ get '/donation/json/lastUpload' => sub{
 	return $r;
 };
 post '/donation/json/add' => sub {
-	my $data;
 	$data->{"phone"}=param('dn_phone');
-	debug(request->body);
+	my $data=from_json(request->body);
+
+	debug($data);
 #	return params;
 #$dbh->quick_insert('donation', { Name => params->{name},
 #		Donor_Phone=>params->{dn_phone},
