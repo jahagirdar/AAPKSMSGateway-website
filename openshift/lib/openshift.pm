@@ -70,4 +70,53 @@ $dbh->quick_insert('donation', { Name => $data->{name},
 		Receipt=>$data->{receipt},
 		phone_id=>$data->{id}	});
 };
+
+##################### Volunteer #####################
+
+get '/volunteer/json/lastUpload' => sub{
+	my $sth=$dbh->prepare('SELECT max(phone_id) FROM volunteer;');
+	$sth->execute();
+my @row = $sth->fetchrow_array;
+	debug(@row);
+	my $r->{"id"}=$row[0];
+	return $r;
+};
+post '/volunteer/json/add' => sub {
+	#$data->{"phone"}=param('dn_phone');
+	my $data=from_json(request->body);
+
+	debug($data);
+#	return params;
+$dbh->quick_insert('volunteer', { Name => $data->{name},
+		Donor_Phone=>$data->{dn_phone},
+		Volunteer_Phone=>$data->{vol_phone},
+		Donation_Time=>$data->{don_time},
+		amount=>$data->{amount},
+		Receipt=>$data->{receipt},
+		phone_id=>$data->{id}	});
+};
+##################### Pledge #####################
+
+get '/pledge/json/lastUpload' => sub{
+	my $sth=$dbh->prepare('SELECT max(phone_id) FROM pledge;');
+	$sth->execute();
+my @row = $sth->fetchrow_array;
+	debug(@row);
+	my $r->{"id"}=$row[0];
+	return $r;
+};
+post '/pledge/json/add' => sub {
+	#$data->{"phone"}=param('dn_phone');
+	my $data=from_json(request->body);
+
+	debug($data);
+#	return params;
+$dbh->quick_insert('pledge', { Name => $data->{name},
+		Donor_Phone=>$data->{dn_phone},
+		Volunteer_Phone=>$data->{vol_phone},
+		Donation_Time=>$data->{don_time},
+		amount=>$data->{amount},
+		Receipt=>$data->{receipt},
+		phone_id=>$data->{id}	});
+};
 true;
