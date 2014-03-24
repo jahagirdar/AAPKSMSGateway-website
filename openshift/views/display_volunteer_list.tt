@@ -1,13 +1,10 @@
 <div id="page">
 <div id="content">
-<div id="header">Sponsor Your Candidate</div>
+<div id="header"><h1>AAM AADMI Party Fundraising</h1> <h2> Fund raising volunteers</h2></div>
 <table><thead>
 <tr><th>Volunteer</th> <th> Phone Number</th> <th>role</th><th>Added By</th></tr></thead>
 <tbody>
-<%#USE Dumper;Dumper.dump(table)%>
-<%table%>
 <%FOREACH tbl IN table%>
-<%#USE Dumper;Dumper.dump(tbl)%>
 <tr>
 <td><%tbl.name%> </td><td><%tbl.phone_number%></td><td><%tbl.role%></td><td><%tbl.parent%></td>
 </tr>
