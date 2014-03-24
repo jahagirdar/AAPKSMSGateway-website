@@ -73,6 +73,7 @@
                     <td>Perl version</td>
                     <td><tt><% perl_version %></tt></td>
                 </tr>
+
                 <tr>
                     <td>Dancer version</td>
                     <td><tt><% dancer_version %></tt></td>
