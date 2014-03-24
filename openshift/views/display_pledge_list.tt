@@ -1,0 +1,17 @@
+<div id="page">
+<div id="content">
+<div id="header">Sponsor Your Candidate</div>
+<table><thead>
+<tr><th>Donor</th> <th> amount</th> <th>Constituency</th></tr></thead>
+<tbody>
+<%#USE Dumper;Dumper.dump(table)%>
+<%table%>
+<%FOREACH tbl IN table%>
+<%#USE Dumper;Dumper.dump(tbl)%>
+<tr>
+<td><%tbl.phone_number%> </td><td><%tbl.amount%></td><td><%tbl.Constituency%></td>
+</tr>
+<%END%>
+</tbody>
+</div>
+</div>
