@@ -88,12 +88,14 @@ post '/volunteer/json/add' => sub {
 
 	debug($data);
 #	return params;
-$dbh->quick_insert('volunteer', { Name => $data->{name},
-		Donor_Phone=>$data->{dn_phone},
-		Volunteer_Phone=>$data->{vol_phone},
-		Donation_Time=>$data->{don_time},
-		amount=>$data->{amount},
-		Receipt=>$data->{receipt},
+{"id":"51","limit":"5000","parent":"+917204508839","role":"a","govtid":"test","phone":"+919036483630","name":"Madhusudhan"}
+
+$dbh->quick_insert('volunteer', { name => $data->{name},
+		phone_number=>$data->{phone},
+		limit=>$data->{limit},
+		parent=>$data->{parent},
+		role=>$data->{role},
+		govtid=>$data->{govtid},
 		phone_id=>$data->{id}	});
 };
 ##################### Pledge #####################
