@@ -5,7 +5,6 @@
 <tr><th>Donor</th> <th> amount</th> <th>time</th></tr></thead>
 <tbody>
 <%#USE Dumper;Dumper.dump(table)%>
-<%table%>
 <%FOREACH tbl IN table%>
 <%#USE Dumper;Dumper.dump(tbl)%>
 <tr>
@@ -13,5 +12,6 @@
 </tr>
 <%END%>
 </tbody>
+</table>
 </div>
 </div>
