@@ -88,14 +88,15 @@ post '/volunteer/json/add' => sub {
 
 	debug($data);
 #	return params;
-#{"id":"51","limit":"5000","parent":"+917204508839","role":"a","govtid":"test","phone":"+919036483630","name":"Madhusudhan"}
 
+my $row = $dbh->quick_select('volunteer', { phone_id => $data->{id} });
 $dbh->quick_insert('volunteer', { name => $data->{name},
 		phone_number=>$data->{phone},
 		limit=>$data->{limit},
 		parent=>$data->{parent},
 		role=>$data->{role},
 		govtid=>$data->{govtid},
+		constituency=>$row->{'constituency'},
 		phone_id=>$data->{id}	});
 };
 ##################### Pledge #####################
