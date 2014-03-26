@@ -1,7 +1,4 @@
-<div id="page">
-<div id="content">
-<div id="header"><h1>AAM AADMI Party Fundraising</h1> <h2>Donation Details</h2></div>
-<table><thead>
+<table class="table table-striped"><thead>
 <tr><th>Donor</th> <th> amount</th> <th>time</th></tr></thead>
 <tbody>
 <%#USE Dumper;Dumper.dump(table)%>
@@ -13,5 +10,3 @@
 <%END%>
 </tbody>
 </table>
-</div>
-</div>
