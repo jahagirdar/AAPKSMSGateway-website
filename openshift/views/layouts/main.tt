@@ -40,7 +40,7 @@
 				<div class="col-md-8 column">
 					<div class="page-header">
 						<h1>
-							AAM Aadmi Party Karnataka:Fund Raising System<small><strong>C</strong>ontribute a <strong>L</strong>ittle For <strong>Y</strong>our <strong>C</strong>andidate In <strong>K</strong>arnataka</small>
+							AAM Aadmi Party Karnataka:Fund Raising System<br/><small><strong>C</strong>ontribute a <strong>L</strong>ittle For <strong>Y</strong>our <strong>C</strong>andidate In <strong>K</strong>arnataka</small>
 						</h1>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 						<a href="http://fundraiser-aapk.rhcloud.com/volunteer/view/list">Volunteer List</a>
 						</li>
 						<li>
-						<a href="http://fundraiser-aapk.rhcloud.com/pledge/view/list">Volunteer List</a>
+						<a href="http://fundraiser-aapk.rhcloud.com/pledge/view/list">Pledge List</a>
 						</li>
 					</ul>
 				</div>
