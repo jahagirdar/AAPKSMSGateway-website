@@ -92,6 +92,7 @@ post '/volunteer/json/add' => sub {
 my $row = $dbh->quick_select('volunteer', { phone_id => $data->{id} });
 if($row->{'constituency'} eq null ){
 	$row->{'constituency'}='Karnataka';
+}
 $dbh->quick_insert('volunteer', { name => $data->{name},
 		phone_number=>$data->{phone},
 		limit=>$data->{limit},
