@@ -2,21 +2,21 @@
 <p>Aam Aadmi Party, has consistently tried to bring in transparency in its funding and expenditure activities. Every online donation is listed on the website, Every offline donation is accompanied by a paper reciept and accounted for in the financial statements available online at <a href="http://aapkarnataka.org"> The party website</a> This page is an experiment by the fundraising team to ensure proper use of technology to assist in realtime accounting of fundraising efforts.</p>
 <h3>Instruction for Candidates</h3>
 Candidates across karnataka are already added to the system. Candidates are required to work with their teams and identify tresurers and delegate the responsibility of adding the volunteers to the tresurers. Once a treasurer is added Candidate should add them to the system by sending a SMS with the following message</p>
-<i> <b>add</b> <SPACE> <b>+91<phone number of the treasurer></b> <SPACE> <b><Govt Issued ID number e.g. pan,dl,voterid, adhar etc.></b> <SPACE> <b>a</b> <SPACE> <b><Name of the volunteer></b></i>
+<i> <b>add</b> &lt;SPACE&gt; <b>+91&lt;phone number of the treasurer&gt;</b> &lt;SPACE&gt; <b>&lt;Govt Issued ID number e.g. pan,dl,voterid, adhar etc.&gt;</b> &lt;SPACE&gt; <b>a</b> &lt;SPACE&gt; <b>&lt;Name of the volunteer&gt;</b></i>
 <h3>Instruction for tresurers</h3>
 <p>Tresurers are requested to identify active volunteers who can be registered as fundraisers for handling cash donations. These volunteers can be added to the system by sending an SMS with the following text</p>
-<i> <b>add</b> <SPACE> <b>+91<phone number of the treasurer></b> <SPACE> <b><Govt Issued ID number e.g. pan,dl,voterid, adhar etc.></b> <SPACE> <b>w</b> <SPACE> <b><Name of the volunteer></b></i>
+<i> <b>add</b> &lt;SPACE&gt; <b>+91&lt;phone number of the treasurer&gt;</b> &lt;SPACE&gt; <b>&lt;Govt Issued ID number e.g. pan,dl,voterid, adhar etc.&gt;</b> &lt;SPACE&gt; <b>w</b> &lt;SPACE&gt; <b>&lt;Name of the volunteer&gt;</b></i>
 <h3> Instruction for fundraisers</h3>
 <ul>
 <li>Fundraisers are requested to carry the registered ID card during all fundraising activities.</li>
 <li>Please take the time to explain our transparency methods to a potential donor.</li>
 <liInvite him to verify your credentials by cross checking your Name on the volunteer list online or by SMSing your ID card number to the system for verification.</li>
 <li>Once a donation is made Issue a paper receipt <b>and</b> send an SMS to the system with the following text<br>
-<i><b>dn</b> <space> <b><Donor Phone Number></b> <space> <b>amount</b> <space> <b><receipt number></b> <space> <b><Donor Name></b></i>
+<i><b>dn</b> &lt;space&gt; <b>&lt;Donor Phone Number&gt;</b> &lt;space&gt; <b>amount</b> &lt;space&gt; <b>&lt;receipt number&gt;</b> &lt;space&gt; <b>&lt;Donor Name&gt;</b></i>
 </li>
 <li> Ensure that the donor gets an SMS acknowledgement on his number.</li>
 </ul>
 
 <p>During fundraising event's involving a huge crowd fundraisers can request audience to pledge their donation amount (will will be collected as per the above procedure on a later date) by sending an SMS with the following content</p>
 
-<i><b>pledge</b> <space> <b>amount</b> <space> <b>Constituency name</b></i>
+<i><b>pledge</b> &lt;space&gt; <b>amount</b> &lt;space&gt; <b>Constituency name</b></i>
