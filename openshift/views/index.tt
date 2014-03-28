@@ -1,18 +1,24 @@
 <h2>AAP Karnataka Fundraising </h2>
 <p>Aam Aadmi Party, has consistently tried to bring in transparency in its funding and expenditure activities. Every online donation is listed on the website, Every offline donation is accompanied by a paper receipt and accounted for in the financial statements available online at <a href="http://aapkarnataka.org"> The party website</a> This page is an experiment by the fund raising team to ensure proper use of technology to assist in realtime accounting of fundraising efforts.</p>
 <h3>Instruction for Candidates</h3>
-Candidates across Karnataka are already added to the system. Candidates are required to work with their teams and identify treasurers and delegate the responsibility of adding the volunteers to the treasurers. Once a treasurer is added Candidate should add them to the system by sending a SMS with the following message</p>
+<p>Candidates across Karnataka are already added to the system. Candidates are required to work with their teams and identify treasurers and delegate the responsibility of adding the volunteers to the treasurers. Once a treasurer is added Candidate should add them to the system by sending a SMS with the following message</p>
 <i> <b>add</b> &lt;SPACE&gt; <b>+91&lt;phone number of the treasurer&gt;</b> &lt;SPACE&gt; <b>&lt;Govt Issued ID number e.g. pan,dl,voterid, aadhar etc.&gt;</b> &lt;SPACE&gt; <b>a</b> &lt;SPACE&gt; <b>&lt;Name of the volunteer&gt;</b></i>
+<br/>
+e.g.<br/>
+<b>add +919876543210 SVF12345 a Vijayvithal</b>
 <h3>Instruction for treasurers</h3>
 <p>Treasurers are requested to identify active volunteers who can be registered as fundraisers for handling cash donations. These volunteers can be added to the system by sending an SMS with the following text</p>
 <i> <b>add</b> &lt;SPACE&gt; <b>+91&lt;phone number of the treasurer&gt;</b> &lt;SPACE&gt; <b>&lt;Govt Issued ID number e.g. pan, dl, voterid, adhar etc.&gt;</b> &lt;SPACE&gt; <b>w</b> &lt;SPACE&gt; <b>&lt;Name of the volunteer&gt;</b></i>
+<br/>e.g.<br/><b>add +919876543210 SVF12345 w Vijayvithal</b>
+<br/>
 <h3> Instruction for fundraisers</h3>
 <ul>
 <li>Fundraisers are requested to carry the registered ID card during all fundraising activities.</li>
 <li>Please take the time to explain our transparency methods to a potential donor.</li>
-<liInvite him to verify your credentials by cross checking your Name on the volunteer list online or by SMSing your ID card number to the system for verification.</li>
+<liInvite him to verify your credentials by cross checking your Name on the volunteer list online or by SMSing your ID card number to the system for verification.<br/> sms command: <b>chk ID number</b> <br/>e.g.<br/><b>chk svf12345</b></li>
 <li>Once a donation is made Issue a paper receipt <b>and</b> send an SMS to the system with the following text<br>
 <i><b>dn</b> &lt;space&gt; <b>&lt;Donor Phone Number&gt;</b> &lt;space&gt; <b>amount</b> &lt;space&gt; <b>&lt;receipt number&gt;</b> &lt;space&gt; <b>&lt;Donor Name&gt;</b></i>
+<br/>e.g.<br/><b>dn 9980123456 101 rcpt12345 Swarajsevak</b>
 </li>
 <li> Ensure that the donor gets an SMS acknowledgement on his number.</li>
 </ul>
@@ -20,4 +26,5 @@ Candidates across Karnataka are already added to the system. Candidates are requ
 <p>During fundraising event's involving a huge crowd fundraisers can request audience to pledge their donation amount (will will be collected as per the above procedure on a later date) by sending an SMS with the following content</p>
 <p>
 <i><b>pledge</b> &lt;space&gt; <b>amount</b> &lt;space&gt; <b>Constituency name</b></i>
+<br/>e.g.<br/> <b>pledge 2001 Mysore</b>
 </p>
