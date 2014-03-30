@@ -55,15 +55,10 @@
 				</div>
 				<div class="col-md-4 column">
 					<ul>
-						<li>
-						<a href="http://fundraiser-aapk.rhcloud.com/donation/view/list">Donation List</a>
-						</li>
-						<li>
-						<a href="http://fundraiser-aapk.rhcloud.com/volunteer/view/list">Volunteer List</a>
-						</li>
-						<li>
-						<a href="http://fundraiser-aapk.rhcloud.com/pledge/view/list">Pledge List</a>
-						</li>
+						<li> <a href="http://fundraiser-aapk.rhcloud.com/">Home</a></li>
+						<li> <a href="http://fundraiser-aapk.rhcloud.com/donation/view/list">Donation List</a> </li>
+						<li> <a href="http://fundraiser-aapk.rhcloud.com/volunteer/view/list">Volunteer List</a> </li>
+						<li> <a href="http://fundraiser-aapk.rhcloud.com/pledge/view/list">Pledge List</a> </li>
 					</ul>
 				</div>
 			</div>

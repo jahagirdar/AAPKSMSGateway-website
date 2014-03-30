@@ -5,7 +5,7 @@
 <%FOREACH tbl IN table%>
 <%IF tbl.constituency!=constituency%><tr><td colspan="4"><center><h3><%tbl.constituency%></td></h3></center></tr><%constituency=tbl.constituency;END%>
 <tr>
-<td><%tbl.name%> </td><td><%tbl.phone_number%></td><td><%IF(tbl.role) == 'w';'Fundraiser';ELSIF (tbl.role=='a'); 'Assembly Coordinator/Treasurer';ELSIF(tbl.role=='s');"State Coordinator";ELSIF(tbl.role=='l');"Candidate";ELSE;tbl.role;END%></td><td><%tbl.parent%></td>
+<td><%tbl.name%> </td><td><%tbl.phone_number%></td><td><%IF(tbl.role) == 'w';'Fundraiser';ELSIF (tbl.role=='a'); 'Assembly Coordinator/ Treasurer';ELSIF(tbl.role=='s');"State Coordinator";ELSIF(tbl.role=='l');"Candidate/ LS Coordinator";ELSE;tbl.role;END%></td><td><%tbl.parent%></td>
 </tr>
 <%END%>
 </tbody>
