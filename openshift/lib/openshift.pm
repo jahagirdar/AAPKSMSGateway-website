@@ -15,7 +15,7 @@ get '/donation/view/list' => sub {
 };
 get '/volunteer/view/list' => sub {
 
-	my @row = $dbh->quick_select('volunteer', {  },{order_by=>'constituency');
+	my @row = $dbh->quick_select('volunteer', {  },{order_by=>'constituency'});
 	#print $#row;
 	template 'display_volunteer_list', { table => \@row };
 };
