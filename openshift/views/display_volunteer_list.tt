@@ -3,7 +3,7 @@
 <tr><th>Volunteer</th> <th> Phone Number</th> <th>role</th><th>Added By</th></tr></thead>
 <tbody>
 <%FOREACH tbl IN table%>
-<%IF tbl.constituency!=constituency%><td colspan="4"><tr><%tbl.constituency%></td></tr><%constituency=tbl.constituency;END%>
+<%IF tbl.constituency!=constituency%><tr><td colspan="4"><%tbl.constituency%></td></tr><%constituency=tbl.constituency;END%>
 <tr>
 <td><%tbl.name%> </td><td><%tbl.phone_number%></td><td><%tbl.role%></td><td><%tbl.parent%></td>
 </tr>
