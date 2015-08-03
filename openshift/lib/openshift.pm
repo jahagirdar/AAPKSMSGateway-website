@@ -89,7 +89,7 @@ post '/volunteer/json/add' => sub {
 	debug($data);
 #	return params;
 
-my $row = $dbh->quick_select('volunteer', { phone_number => $data->{id} });
+my $row = $dbh->quick_select('volunteer', { phone_number => $data->{parent} });
 if($row->{'constituency'} eq undef ){
 	$row->{'constituency'}='Karnataka';
 }

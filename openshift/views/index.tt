@@ -11,6 +11,9 @@ e.g.<br/>
 <i> <b>add</b> &lt;SPACE&gt; <b>+91&lt;phone number of the treasurer&gt;</b> &lt;SPACE&gt; <b>&lt;Govt Issued ID number e.g. pan, dl, voterid, adhar etc.&gt;</b> &lt;SPACE&gt; <b>w</b> &lt;SPACE&gt; <b>&lt;Name of the volunteer&gt;</b></i>
 <br/>e.g.<br/><b>add +919876543210 SVF12345 w Vijayvithal</b>
 <br/>
+Treasurer's have an additional responsibility of ensuring that the donation collected by all the fundraisers added by him in a given week are deposited in the party bank account at the end of the week. Once the deposite is made an SMS needs to be sent to the SMS gateway with the following command
+<b>depo amount Transaction_ID</b><br/>
+e.g. <b>depo 20148 IC11243255</b><br/>
 <h3> Instruction for fundraisers</h3>
 <ul>
 <li>Fundraisers are requested to carry the registered ID card during all fundraising activities.</li>
